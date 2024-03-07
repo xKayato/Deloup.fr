@@ -36,7 +36,7 @@
   box-sizing: border-box;
   cursor: pointer;
   display: inline-block;
-  width: 25vw; /* 4 items per row */
+  width: 25%; /* 4 items per row */
   height: 20vh;
   white-space: normal;
 }
