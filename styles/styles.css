@@ -1,0 +1,153 @@
+/* Sélecteur pour la scrollbar principale (par défaut) */
+::-webkit-scrollbar {
+  width: 0.5vw; /* Largeur de la scrollbar */
+}
+
+/* Track (fond de la scrollbar) */
+::-webkit-scrollbar-track {
+  background-color: #000000; /* Couleur du fond de la scrollbar */
+}
+
+/* Handle (la partie de la scrollbar que vous faites glisser) */
+::-webkit-scrollbar-thumb {
+  background-color: #1e1e1e; /* Couleur de la partie draggable de la scrollbar */
+  border-radius: 0.5vw; /* Bordure arrondie de la partie draggable */
+}
+
+/* Pseudo-élément qui représente la partie draggable pendant le défilement rapide */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #000000; /* Changement de couleur au survol */
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background: rgb(27,27,27);
+    background: radial-gradient(circle, rgba(27,27,27,1) 0%, rgba(0,0,0,1) 100%);
+    color: white;
+}
+
+
+header #logo-TD{
+    width: 10vh;
+    margin-left: 1vw;
+}
+
+section.fullPage {
+    height: 100vh;
+    background-color: #84848437;
+  }
+
+.fullPage #bg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    min-width: 100vw;
+    object-fit: cover;
+    z-index: -1;
+    background-color: #1d1d1d;
+}
+
+
+
+nav {
+    font-size: 3vh;
+    min-width: 25vw;
+    position: fixed;
+    right: 1vw;
+    background-color: #1d1d1d60;
+    border-radius: 1vh;
+}
+
+nav li{
+    display: inline;
+    margin-right: 2vw;
+}
+
+nav li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav li a.active{
+    font-weight: bold;
+    text-shadow: rgb(170, 170, 170) 1px 0 10px;
+
+}
+
+nav li a:hover{
+    text-decoration: underline;
+}
+
+#title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 10vh;
+    margin-top: -5vh;
+    transform: translate(-50%, -50%);
+}
+
+footer {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    font-size: 2vh;
+    width: 100%;
+}
+
+
+.stack {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  
+  .stack span {
+    font-weight: bold;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    --stack-height: calc(100% / var(--stacks) - 1px);
+    --inverse-index: calc(calc(var(--stacks) - 1) - var(--index));
+    --clip-top: calc(var(--stack-height) * var(--index));
+    --clip-bottom: calc(var(--stack-height) * var(--inverse-index));
+    clip-path: inset(var(--clip-top) 0 var(--clip-bottom) 0);
+    animation: stack 340ms cubic-bezier(.46,.29,0,1.24) 1 backwards calc(var(--index) * 120ms), glitch 2s ease infinite 2s alternate-reverse;
+  }
+  
+  .stack span:nth-child(odd) { --glitch-translate: 8px; }
+  .stack span:nth-child(even) { --glitch-translate: -8px; }
+  
+  @keyframes stack {
+    0% {
+      opacity: 0;
+      transform: translateX(-50%);
+      text-shadow: -2px 3px 0 red, 2px -3px 0 blue;
+    };
+    60% {
+      opacity: 0.5;
+      transform: translateX(50%);
+    }
+    80% {
+      transform: none;
+      opacity: 1;
+      text-shadow: 2px -3px 0 red, -2px 3px 0 blue;
+    }
+    100% {
+      text-shadow: none;
+    }
+  }
+  
+  @keyframes glitch {
+    0% {
+      text-shadow: -2px 3px 0 red, 2px -3px 0 blue;
+      transform: translate(var(--glitch-translate));
+    }
+    2% {
+      text-shadow: 2px -3px 0 red, -2px 3px 0 blue;
+    }
+    4%, 100% {  text-shadow: none; transform: none; }
+  }

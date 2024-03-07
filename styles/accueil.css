@@ -1,0 +1,10 @@
+#presentation {
+    position: absolute;
+    text-shadow: rgb(170, 170, 170) 1px 0 10px;
+    top: 80vh;
+    left: 50%;
+    font-size: 3vh;
+    margin-top: -2.5vh;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}

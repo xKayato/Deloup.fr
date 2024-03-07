@@ -1,0 +1,88 @@
+#Portfolio {
+    background: rgb(48, 48, 48);
+    background: radial-gradient(circle, rgb(39, 39, 39) 0%, rgb(0, 0, 0) 100%);
+}
+
+#Portfolio .titre {
+    position: absolute;
+    left: 50%;
+    top: 210vh;
+    font-size: 8vh;
+    transform: translate(-50%, -50%);
+}
+
+
+.portfolio-container.un{
+  position: absolute;
+  top: 225vh;
+  width: 99.5vw;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.portfolio-container.deux{
+  position: absolute;
+  top: 255vh;
+  width: 99.5vw;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.slider {
+  display: inline-block;
+}
+
+.portfolio-item {
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  width: 25vw; /* 4 items per row */
+  height: 20vh;
+  white-space: normal;
+}
+
+.portfolio-content {
+  padding: 3vh;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 2vh;
+  margin: 2vh;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+  font-size: 2vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70vw;
+  height: 70vh;
+  background: white;
+  color: black;
+  padding: 5vh;
+  text-align: center;
+  border-radius: 2vw;
+}
+
+.close {
+  position: absolute;
+  top: 1vh;
+  right: 1vw;
+  font-size: 4vh;
+  color: #333;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #5f0a0a;
+}
