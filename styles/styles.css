@@ -31,6 +31,7 @@ body {
 }
 
 
+
 header #logo-TD{
     width: 10vh;
     margin-left: 1vw;
@@ -41,17 +42,37 @@ section.fullPage {
     background-color: #84848437;
   }
 
-.fullPage #bg {
-    position: absolute;
-    right: 0;
-    bottom: 0;
+.fullPage .bg {
+    
     height: 100vh;
     min-width: 100vw;
     object-fit: cover;
-    z-index: -1;
     background-color: #1d1d1d;
 }
 
+.fullPage#Accueil .bg {
+  filter: blur(5px);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.fullPage#Moi .bg {
+  filter: blur(5px);
+  position: absolute;
+  right: 0;
+  top: 100vh;
+  z-index: -1;
+}
+
+.fullPage#Portfolio .bg {
+  filter: brightness(50%) blur(5px);
+  position: absolute;
+  right: 0;
+  top: 200vh;
+  z-index: -1;
+}
 
 
 nav {
@@ -69,6 +90,7 @@ nav li{
 }
 
 nav li a {
+    
     text-decoration: none;
     color: white;
 }
