@@ -1,12 +1,43 @@
-#Moi {
-
-
-}
-
 #Moi .titre {
     position: absolute;
     left: 50%;
     top: 110vh;
     font-size: 8vh;
     transform: translate(-50%, -50%);
+}
+
+#Me {
+
+    text-shadow: rgb(170, 170, 170) 1px 0 10px;
+    font-size: 2vh;
+}
+
+#Me .left{
+    position: absolute;
+    top: 120vh;
+    max-width: 49vw;
+    min-height: 50vh;
+    background-color: #0000001f;
+    border-radius: 1vw;
+    margin-left: 0.5vw;
+    margin-right: 1vw;
+}
+
+#Me .right{
+    position: absolute;
+    top: 120vh;
+    left: 49vw;
+    max-width: 48vw;
+    min-height: 50vh;
+    background-color: #0000001f;
+    border-radius: 1vw;
+    margin-left: 1vw;
+}
+
+#Me p{
+    margin-left: 2vw;
+}
+
+#Me h2{
+    margin-left: 1vw;
 }

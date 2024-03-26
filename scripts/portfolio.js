@@ -11,9 +11,12 @@ function openModal(index) {
 }
 
 function customizeModalContent(content) {
-  if (content.includes("Projet 1")) {
+  if (content.includes("Python : JSON et Instagram")) {
     // Personnalise le contenu pour le Projet 1
-    return "<p>Ceci est un test</p>";
+    const left = '<div class="gauche"><h3>Mes compétences</h3><p>Instagram permet de télécharger nos données utilisateurs sous forme de fichier JSON ou HTML. Parmi ces données se trouve nos conversations.<br><br> J\'ai effectué un programme Python permettant trier nos messages Instagram et également un sytème de recherche de message (non disponible sur instagram)<br><br> Tous les messages sont stockés dans la mémoire, si le fichier est très volumineux le programme peut mettre un certain temps à s\'effectuer(un fichier très volumineux prend environ 15 secondes à être mis en mémoire).<br><br><button class="button" data-modal="modalOne">En savoir plus</button></p></div>';
+    const right = '<div class="droite"><h3>Catégories</h3><ul><li>Info</li><li>Programmation</li></ul><h3>Notions</h3><ul><li>Python</li><li>JSON</li><li>Interface Graphique (Tkinter)</li></ul><h3>Logiciels</h3><ul><li>Visual Studio Code</li></ul></div>';
+    return left+right;
+    // return "";
   }
   // Ajoutez d'autres conditions pour d'autres projets si nécessaire
 
