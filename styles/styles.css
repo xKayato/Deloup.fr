@@ -82,6 +82,7 @@ nav {
     right: 1vw;
     background-color: #1d1d1d60;
     border-radius: 1vh;
+    z-index: 1;
 }
 
 nav li{

@@ -1,0 +1,36 @@
+#Passions {
+    background: radial-gradient(circle, rgb(8, 72, 77) 0%, rgba(0,0,0,1) 100%);
+}
+
+#Passions {
+    text-shadow: rgb(170, 170, 170) 1px 0 10px;
+    font-size: 2vh;
+}
+
+#Passions p{
+    margin-left: 2vw;
+}
+
+#Passions h2{
+    margin-left: 1vw;
+}
+
+#Passions .titre {
+    position: absolute;
+    left: 50%;
+    top: 210vh;
+    font-size: 8vh;
+    transform: translate(-50%, -50%);
+}
+
+#Passions .center{
+    position: absolute;
+    top: 220vh;
+    left: 50%;
+    transform: translate(-50%);
+    max-width: 48vw;
+    min-height: 50vh;
+    background-color: #00000060;
+    border-radius: 1vw;
+    margin-left: 1vw;
+}

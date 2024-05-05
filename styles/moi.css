@@ -1,3 +1,7 @@
+#Moi {
+    background: radial-gradient(circle, rgb(77, 8, 59) 0%, rgba(0,0,0,1) 100%);
+}
+
 #Moi .titre {
     position: absolute;
     left: 50%;
@@ -7,7 +11,6 @@
 }
 
 #Me {
-
     text-shadow: rgb(170, 170, 170) 1px 0 10px;
     font-size: 2vh;
 }
@@ -17,7 +20,7 @@
     top: 120vh;
     max-width: 49vw;
     min-height: 50vh;
-    background-color: #0000001f;
+    background-color: #00000060;
     border-radius: 1vw;
     margin-left: 0.5vw;
     margin-right: 1vw;
@@ -29,7 +32,19 @@
     left: 49vw;
     max-width: 48vw;
     min-height: 50vh;
-    background-color: #0000001f;
+    background-color: #00000060;
+    border-radius: 1vw;
+    margin-left: 1vw;
+}
+
+#Me .center{
+    position: absolute;
+    top: 120vh;
+    left: 50%;
+    transform: translate(-50%);
+    max-width: 48vw;
+    min-height: 50vh;
+    background-color: #00000060;
     border-radius: 1vw;
     margin-left: 1vw;
 }

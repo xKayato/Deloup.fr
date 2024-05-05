@@ -1,11 +1,11 @@
 #Portfolio {
-
+  background: radial-gradient(circle, rgb(95, 7, 7) 0%, rgb(15, 15, 15) 100%);
 }
 
 #Portfolio .titre {
     position: absolute;
     left: 50%;
-    top: 210vh;
+    top: 310vh;
     font-size: 8vh;
     transform: translate(-50%, -50%);
 }
@@ -13,7 +13,7 @@
 
 .portfolio-container.un{
   position: absolute;
-  top: 225vh;
+  top: 325vh;
   width: 99.5vw;
   overflow-x: auto;
   white-space: nowrap;
@@ -21,7 +21,7 @@
 
 .portfolio-container.deux{
   position: absolute;
-  top: 255vh;
+  top: 355vh;
   width: 99.5vw;
   overflow-x: auto;
   white-space: nowrap;
@@ -46,6 +46,7 @@
   border: 1px solid #ccc;
   border-radius: 2vh;
   margin: 2vh;
+  background-color: #ffffff34;
 }
 
 .modal {
@@ -74,15 +75,15 @@
 
 .close {
   position: absolute;
-  top: 1vh;
+  top: 4vh;
   right: 1vw;
   font-size: 4vh;
-  color: #333;
+  color: #ffffff;
   cursor: pointer;
 }
 
 .close:hover {
-  color: #5f0a0a;
+  color: #949494;
 }
 
 

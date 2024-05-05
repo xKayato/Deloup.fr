@@ -3,8 +3,25 @@
     text-shadow: rgb(170, 170, 170) 1px 0 10px;
     top: 80vh;
     left: 50%;
-    font-size: 3vh;
-    margin-top: -2.5vh;
+    font-size: 5vh;
+    margin-top: -1vh;
     transform: translate(-50%, -50%);
     text-align: center;
 }
+
+#reseaux li{
+    display: inline;
+}
+
+#reseaux ul {
+    font-size: 4vh;
+    position: absolute;
+    top: 90vh;
+    right: 1vw;
+}
+
+#reseaux a {
+    color: white;
+    text-decoration: none !important;
+}
+
