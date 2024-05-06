@@ -10,6 +10,21 @@
     transform: translate(-50%, -50%);
 }
 
+#Portfolio ::-webkit-scrollbar-track {
+  background-color: radial-gradient(circle, rgb(77, 8, 59) 0%, rgba(0,0,0,1) 100%); /* Couleur du fond de la scrollbar */
+}
+
+#Portfolio ::-webkit-scrollbar {
+  height: 0.8vw; /* Largeur de la scrollbar */
+}
+
+/* Handle (la partie de la scrollbar que vous faites glisser) */
+#Portfolio ::-webkit-scrollbar-thumb {
+  background-color: #bbbbbb; /* Couleur de la partie draggable de la scrollbar */
+  border-radius: 0.5vw; /* Bordure arrondie de la partie draggable */
+  
+}
+
 
 .portfolio-container.un{
   position: absolute;

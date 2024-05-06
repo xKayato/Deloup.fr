@@ -17,6 +17,11 @@ function customizeModalContent(content) {
     const right = '<div class="droite"><h3>Catégories</h3><ul><li>Info</li><li>Programmation</li></ul><h3>Notions</h3><ul><li>Python</li><li>JSON</li><li>Interface Graphique (Tkinter)</li></ul><h3>Logiciels</h3><ul><li>Visual Studio Code</li></ul></div>';
     return left+right;
     // return "";
+  } 
+  else if (content.includes("Site Web sur")){
+    const left = '<div class="gauche"><h3>Mes compétences</h3><p>Site web<br><br><button class="button" data-modal="modalOne">En savoir plus</button></p></div>';
+    const right = '<div class="droite"><h3>Catégories</h3><ul><li>Info</li><li>Programmation</li></ul><h3>Notions</h3><ul><li>HTML</li><li>CSS</li></ul><h3>Logiciels</h3><ul><li>Visual Studio Code</li></ul></div>';
+    return left+right;
   }
   // Ajoutez d'autres conditions pour d'autres projets si nécessaire
 
