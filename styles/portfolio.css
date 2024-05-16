@@ -28,7 +28,7 @@
 
 .portfolio-container.un{
   position: absolute;
-  top: 325vh;
+  top: 320vh;
   width: 99.5vw;
   overflow-x: auto;
   white-space: nowrap;
@@ -36,7 +36,14 @@
 
 .portfolio-container.deux{
   position: absolute;
-  top: 355vh;
+  top: 345vh;
+  width: 99.5vw;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+.portfolio-container.trois{
+  position: absolute;
+  top: 370vh;
   width: 99.5vw;
   overflow-x: auto;
   white-space: nowrap;
@@ -104,6 +111,10 @@
 
 
 .gauche {
+  background-color: #9494941f;
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
+  border-radius: 1vw;
   position: absolute;
   left: 2vw;
   font-size: 2vh;

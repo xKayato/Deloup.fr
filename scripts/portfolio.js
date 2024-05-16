@@ -14,10 +14,9 @@ function customizeModalContent(content) {
   if (content.includes("Python : JSON et Instagram")) {
     // Personnalise le contenu pour le Projet 1
     const title = content;
-    const left = '<div class="gauche"><h3>Mes compétences</h3><p>Instagram permet de télécharger nos données utilisateurs sous forme de fichier JSON ou HTML. Parmi ces données se trouve nos conversations.<br><br> J\'ai effectué un programme Python permettant trier nos messages Instagram et également un sytème de recherche de message (non disponible sur instagram)<br><br> Tous les messages sont stockés dans la mémoire, si le fichier est très volumineux le programme peut mettre un certain temps à s\'effectuer(un fichier très volumineux prend environ 15 secondes à être mis en mémoire).<br><br><button class="button" data-modal="modalOne">En savoir plus</button></p></div>';
+    const left = '<div class="gauche"><h3>Le projet</h3><p>Instagram permet de télécharger nos données utilisateurs sous forme de fichier JSON ou HTML. Parmi ces données se trouve nos conversations.<br><br> J\'ai effectué un programme Python permettant trier nos messages Instagram et également un sytème de recherche de message (non disponible sur instagram)<br><br> Tous les messages sont stockés dans la mémoire, si le fichier est très volumineux le programme peut mettre un certain temps à s\'effectuer(un fichier très volumineux prend environ 15 secondes à être mis en mémoire).</p><h3>Compétences acquises</h3><p>Pour ce faire j\'ai du étudier la forme du fichier JSON afin de le retranscrire en dictionnaire lisible sur python. Afin d\'ensuite le manipuler comme je veux.</p><p>Téléchargement et captures d\'écran du code pas encore disponnibles</p></div>';
     const right = '<div class="droite"><h3>Catégories</h3><ul><li>Info</li><li>Programmation</li></ul><h3>Notions</h3><ul><li>Python</li><li>JSON</li><li>Interface Graphique (Tkinter)</li></ul><h3>Logiciels</h3><ul><li>Visual Studio Code</li></ul></div>';
-    return left+right;
-    // return "";
+    return title+left+right;
   } 
   else if (content.includes("Site Web sur")){
     const title = content;
@@ -32,7 +31,17 @@ function customizeModalContent(content) {
 
 
     return title+left+right;
+  }else if (content.includes("Interview d'un professionel")){
+    const title = content;
+
+    const left = "<div class='gauche'><h3>Explication</h3><p>Avec un camarade, lors de notre première année en BUT nous avions dû préparer une interview d'un professionel dans le milieu des réseaux et télécommunications. Avec notre camarade nous avions choisi un ingénieur en cybersécurité et plus précisément un pentester et chercheur de solution en cybersécurité chez Amadeus.</p><h3>Compétences</h3><p>Cette préparation d'interview nous a permis d'apprendre à parler à un professionnel, se renseigner sur son métier, choisir de bonnes questions et mettre en place un rendez-vous.</p><h3>Le métier</h3><p>Suite à cette interview, j'en ai plus appris sur le métier de pentester, un métier qui m'interesse de plus en plus. Le professionnel nous à donné son parcours et j'aimerais bien faire un parcours qui y ressemble.</p></div>";
+    const right = '<div class="droite"><h3>Catégories</h3><ul><li>Interview</li><li>Communication</li></ul><h3>Notions</h3><ul><li>Recherches</li></div>';
+
+    return title+left+right;
   }
+
+  const left = "<div class='gauche'></p></div>";
+  const right = "<div class='droite'><h3>Catégories</h3><ul><li>Gestion de projet</li><li>Info</li><li>Programmation</li></ul><h3>Notions</h3><ul><li>HTML</li><li>CSS</li><li>PHP</li><li>SQL</li></ul><h3>Logiciels</h3><ul><li>Visual Studio Code</li><li>DB Brower for SQLite</li><li>Excel</li></ul></div>";
 
   return content;
 }
