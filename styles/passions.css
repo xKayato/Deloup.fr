@@ -46,3 +46,12 @@
     border-radius: 1vw;
     margin-left: 1vw;
 }
+
+#Passions #manette{
+    position: absolute;
+    top: 210vh;
+    left: 20%;
+    transform: rotate(-45deg) ;
+    max-width: 10vw;
+
+}
