@@ -1,49 +1,15 @@
-#Portfolio {
-  background: radial-gradient(circle, rgb(95, 7, 7) 0%, rgb(15, 15, 15) 100%);
-}
-
-#Portfolio .titre {
-    position: absolute;
-    left: 50%;
-    top: 310vh;
-    font-size: 8vh;
-    transform: translate(-50%, -50%);
-}
-
-#Portfolio ::-webkit-scrollbar-track {
-  background-color: radial-gradient(circle, rgb(77, 8, 59) 0%, rgba(0,0,0,1) 100%); /* Couleur du fond de la scrollbar */
-}
-
-#Portfolio ::-webkit-scrollbar {
-  height: 0.8vw; /* Largeur de la scrollbar */
-}
-
-/* Handle (la partie de la scrollbar que vous faites glisser) */
-#Portfolio ::-webkit-scrollbar-thumb {
-  background-color: #bbbbbb; /* Couleur de la partie draggable de la scrollbar */
-  border-radius: 0.5vw; /* Bordure arrondie de la partie draggable */
-  
-}
-
-
 .portfolio-container.un{
-  position: absolute;
-  top: 320vh;
   width: 99.5vw;
   overflow-x: auto;
   white-space: nowrap;
 }
 
 .portfolio-container.deux{
-  position: absolute;
-  top: 345vh;
   width: 99.5vw;
   overflow-x: auto;
   white-space: nowrap;
 }
 .portfolio-container.trois{
-  position: absolute;
-  top: 370vh;
   width: 99.5vw;
   overflow-x: auto;
   white-space: nowrap;
@@ -58,19 +24,21 @@
   cursor: pointer;
   display: inline-block;
   width: 25%; /* 4 items per row */
-  height: 20vh;
   white-space: normal;
 }
 
 .portfolio-content {
   padding: 1vh;
   text-align: center;
-  border: 1px solid #ccc;
+  border: 1px solid #2250ce;
   border-radius: 2vh;
   margin: 2vh;
-  background-color: #8c8c8c2b;
+  background-color: #2250ce6c;
 }
 
+.portfolio-content:hover {
+  background-color: #2250ceb7;
+}
 
 .modal {
   display: none;
